@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== Brand Colours (same in light/dark) ===== -->
+    <!-- Primary: deep-space blue that pops on dark -->
+    <color name="primary">#4FC3F7</color>
+    <!-- pressed / variant -->
+    <color name="primary_dark">#0288D1</color>
+    <color name="primary_light">#81D4FA</color>
+    <!-- Accent: vivid amber -->
+    <color name="accent">#FFB300</color>
+    <!-- Semantic -->
+    <color name="success">#00C853</color>
+    <color name="error">#FF5252</color>
+    <color name="snooze_btn">#7C4DFF</color>
+
+    <!-- ===== Dark-10 Surface Stack ===== -->
+    <!-- Pure black base (OLED-friendly) -->
+    <color name="bg_primary">#000000</color>
+    <!-- Cards sit 1 step above surface -->
+    <color name="card_bg">#0D0D0D</color>
+    <!-- Elevated cards / dialogs -->
+    <color name="card_elevated">#141414</color>
+    <!-- Dividers / borders -->
+    <color name="divider">#1F1F1F</color>
+
+    <!-- ===== Text ===== -->
+    <color name="text_primary">#EAEAEA</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="text_hint">#616161</color>
+
+    <!-- ===== Component Backgrounds ===== -->
+    <!-- status badge row (API key, etc.) -->
+    <color name="status_bg">#0A1929</color>
+    <!-- info card background -->
+    <color name="info_card_bg">#0A0F1E</color>
+    <!-- instruction banner -->
+    <color name="instruction_bg">#050D1A</color>
+    <!-- switch track on -->
+    <color name="switch_track">#1A3A5C</color>
+
+    <!-- ===== Dismiss / Alarm Screen ===== -->
+    <color name="dismiss_bg">#000000</color>
+    <!-- header gradient start (dark teal) -->
+    <color name="dismiss_header">#001A2C</color>
+    <!-- footer below buttons -->
+    <color name="dismiss_footer">#050505</color>
+
+    <!-- Toolbar background (very dark, not blue) -->
+    <color name="toolbar_bg">#080808</color>
+</resources>

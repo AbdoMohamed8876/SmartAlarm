@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Alarm</string>
+    <string name="alarm_label">منبه</string>
+    <string name="add_alarm">إضافة منبه</string>
+    <string name="settings">الإعدادات</string>
+    <string name="dismiss">إيقاف</string>
+    <string name="snooze">تأجيل</string>
+    <string name="capture_to_dismiss">صوّر الهدف لإيقاف المنبه</string>
+    <string name="no_alarms">لا توجد منبهات\nاضغط + لإضافة منبه</string>
+    <string name="channel_alarm_name">تنبيهات المنبه</string>
+    <string name="channel_alarm_description">إشعارات المنبه الذكي</string>
+</resources>

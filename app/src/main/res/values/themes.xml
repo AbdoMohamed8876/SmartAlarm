@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Theme.SmartAlarm
+        ─────────────────────────────────────────────────────────────────────
+        • Forces dark mode regardless of system setting
+        • Based on Material3 (MaterialComponents) so all widgets inherit it
+        • AMOLED/Dark-10 surface stack: pure black → near-black cards
+        • Accent: sky-blue primary + amber secondary (visible on black)
+    -->
+    <style name="Theme.SmartAlarm"
+        parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Force dark even if system is in light mode -->
+        <item name="android:forceDarkAllowed">false</item>
+
+        <!-- Primary brand colour (sky-blue – vivid on black) -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <!-- Secondary / accent (amber) -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Surfaces -->
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorBackground">@color/bg_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">#000000</item>
+
+        <!-- Window chrome -->
+        <item name="android:windowBackground">@color/bg_primary</item>
+        <item name="android:statusBarColor">@color/bg_primary</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <!-- Toolbar -->
+        <item name="actionBarStyle">@style/SmartAlarm.ActionBar</item>
+
+        <!-- TextInputLayout outline tint -->
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="colorControlHighlight">#334FC3F7</item>
+
+        <!-- CardView defaults -->
+        <item name="cardViewStyle">@style/SmartAlarm.Card</item>
+
+        <!-- Switch thumb/track -->
+        <item name="switchStyle">@style/SmartAlarm.Switch</item>
+    </style>
+
+    <!-- ActionBar dark style -->
+    <style name="SmartAlarm.ActionBar"
+        parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/toolbar_bg</item>
+        <item name="titleTextStyle">@style/SmartAlarm.ActionBar.Title</item>
+    </style>
+
+    <style name="SmartAlarm.ActionBar.Title"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- Card defaults: dark surface + no light elevation overlay -->
+    <style name="SmartAlarm.Card"
+        parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_bg</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Switch: sky-blue track on dark -->
+    <style name="SmartAlarm.Switch"
+        parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@null</item>
+    </style>
+
+    <!--
+        Theme.SmartAlarm.NoActionBar
+        Used by DismissActivity – fullscreen over lock screen, no toolbar.
+    -->
+    <style name="Theme.SmartAlarm.NoActionBar"
+        parent="Theme.SmartAlarm">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/dismiss_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--
+        Theme.SmartAlarm.Splash
+        Optional: used when you add a SplashScreen later.
+    -->
+    <style name="Theme.SmartAlarm.Splash"
+        parent="Theme.SmartAlarm.NoActionBar">
+        <item name="android:windowBackground">@color/bg_primary</item>
+    </style>
+
+</resources>
